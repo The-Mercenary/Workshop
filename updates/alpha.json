@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "product": "Workshop",
+  "channel": "alpha",
+  "version": "0.1.0-alpha.1",
+  "build_number": "1",
+  "bundle_id": "studio.themercenary.workshop.suite",
+  "generated_at": "2026-10-19T00:49:16.859026+00:00",
+  "minimum_macos": "14.0",
+  "architectures": [
+    "arm64"
+  ],
+  "release_url": "https://github.com/The-Mercenary/Workshop/releases/tag/v0.1.0-alpha.1",
+  "code_signed": true,
+  "notarized": true,
+  "automatic_installation": false,
+  "workgroup_schema_versions": [
+    1
+  ],
+  "assets": [
+    {
+      "name": "Workshop-0.1.0-alpha.1-macos-arm64.dmg",
+      "sha256": "8b53a520d09059f2d24acb2f4b261826467e22e3d02dd80714e53d9b3571fd8b",
+      "bytes": 189427839,
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.1/Workshop-0.1.0-alpha.1-macos-arm64.dmg"
+    },
+    {
+      "name": "Workshop-0.1.0-alpha.1-macos-arm64.zip",
+      "sha256": "626e5dc7a7f842ce0f90ac0d5303130e9656f53c786df0b7e9332ee1d31fb3e7",
+      "bytes": 176417761,
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.1/Workshop-0.1.0-alpha.1-macos-arm64.zip"
+    }
+  ]
+}
