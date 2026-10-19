@@ -1,35 +1,331 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "product": "Workshop",
+  "version": "0.1.0-alpha.2",
   "channel": "alpha",
-  "version": "0.1.0-alpha.1",
-  "build_number": "1",
   "bundle_id": "studio.themercenary.workshop.suite",
-  "generated_at": "2026-10-19T00:49:16.859026+00:00",
-  "minimum_macos": "14.0",
-  "architectures": [
-    "arm64"
-  ],
-  "release_url": "https://github.com/The-Mercenary/Workshop/releases/tag/v0.1.0-alpha.1",
-  "code_signed": true,
-  "notarized": true,
-  "automatic_installation": false,
+  "release_url": "https://github.com/The-Mercenary/Workshop/releases/tag/v0.1.0-alpha.2",
+  "targets": {
+    "osx-arm64": {
+      "label": "macOS Apple Silicon",
+      "minimum": "macOS 14+",
+      "installer": "Workshop-0.1.0-alpha.2-macos-arm64.dmg",
+      "channel": "osx-arm64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": true,
+      "notarized": true
+    },
+    "osx-x64": {
+      "label": "macOS Intel",
+      "minimum": "macOS 14+",
+      "installer": "Workshop-0.1.0-alpha.2-macos-x64.dmg",
+      "channel": "osx-x64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": true,
+      "notarized": true
+    },
+    "win-x64": {
+      "label": "Windows x64",
+      "minimum": "Windows 11+",
+      "installer": "studio.themercenary.workshop.suite-win-x64-alpha-Setup.exe",
+      "channel": "win-x64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": false,
+      "notarized": false
+    },
+    "win-arm64": {
+      "label": "Windows ARM64",
+      "minimum": "Windows 11 ARM64+",
+      "installer": "studio.themercenary.workshop.suite-win-arm64-alpha-Setup.exe",
+      "channel": "win-arm64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": false,
+      "notarized": false
+    },
+    "linux-x64": {
+      "label": "Linux x64",
+      "minimum": "Ubuntu 22.04 / glibc 2.35+",
+      "installer": "Workshop-0.1.0-alpha.2-linux-x64.tar.gz",
+      "channel": "linux-x64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": false,
+      "notarized": false
+    },
+    "linux-arm64": {
+      "label": "Linux ARM64",
+      "minimum": "Ubuntu 24.04 / glibc 2.39+",
+      "installer": "Workshop-0.1.0-alpha.2-linux-arm64.tar.gz",
+      "channel": "linux-arm64-alpha",
+      "native_session_and_real_upgrade_verified": true,
+      "code_signed": false,
+      "notarized": false
+    }
+  },
   "workgroup_schema_versions": [
     1
   ],
+  "updates": {
+    "framework": "Velopack 1.2.161",
+    "automatic_checks": true,
+    "check_interval_hours": 24,
+    "automatic_download": false,
+    "automatic_installation": false,
+    "requires_saved_work_before_restart": true,
+    "document_upload": false,
+    "source_repository": "https://github.com/The-Mercenary/Workshop"
+  },
   "assets": [
     {
-      "name": "Workshop-0.1.0-alpha.1-macos-arm64.dmg",
-      "sha256": "8b53a520d09059f2d24acb2f4b261826467e22e3d02dd80714e53d9b3571fd8b",
-      "bytes": 189427839,
-      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.1/Workshop-0.1.0-alpha.1-macos-arm64.dmg"
+      "name": "RELEASES-osx-arm64-alpha",
+      "runtime": "osx-arm64",
+      "bytes": 129,
+      "sha256": "223682e5facdb71addc9cec65a586d676ea04d5ef69a67a81c30f0ad0aff15a0",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-osx-arm64-alpha"
     },
     {
-      "name": "Workshop-0.1.0-alpha.1-macos-arm64.zip",
-      "sha256": "626e5dc7a7f842ce0f90ac0d5303130e9656f53c786df0b7e9332ee1d31fb3e7",
-      "bytes": 176417761,
-      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.1/Workshop-0.1.0-alpha.1-macos-arm64.zip"
+      "name": "Workshop-0.1.0-alpha.2-macos-arm64.dmg",
+      "runtime": "osx-arm64",
+      "bytes": 194126131,
+      "sha256": "cedd2bfcc65af562cf6c3fc87e1bf284f985542be2f698aecbcf2086f6270e87",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/Workshop-0.1.0-alpha.2-macos-arm64.dmg"
+    },
+    {
+      "name": "assets.osx-arm64-alpha.json",
+      "runtime": "osx-arm64",
+      "bytes": 219,
+      "sha256": "860af34ae83b9a364f746998b968a8c5149677b6a8df485cb42fb691227ed082",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.osx-arm64-alpha.json"
+    },
+    {
+      "name": "releases.osx-arm64-alpha.json",
+      "runtime": "osx-arm64",
+      "bytes": 335,
+      "sha256": "515ee848261b4ca374da68272916fbf20389acc3b45b85829bd30230b19c56cb",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.osx-arm64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-osx-arm64-alpha-full.nupkg",
+      "runtime": "osx-arm64",
+      "bytes": 180838231,
+      "sha256": "fc73657abf1dd0458e02123e26572e29de262fb6fb7c80936146e72f51aeb5bb",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-osx-arm64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-osx-arm64-alpha-Portable.zip",
+      "runtime": "osx-arm64",
+      "bytes": 182260558,
+      "sha256": "5e4aa3887e9ee20dd300a0778f915bfd1a6be707e9de5db9b8a7dd20053d2321",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-osx-arm64-alpha-Portable.zip"
+    },
+    {
+      "name": "RELEASES-osx-x64-alpha",
+      "runtime": "osx-x64",
+      "bytes": 127,
+      "sha256": "20e330c6b57c7b3241176ddb174e6dee908ece14119d18999284741001bde306",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-osx-x64-alpha"
+    },
+    {
+      "name": "Workshop-0.1.0-alpha.2-macos-x64.dmg",
+      "runtime": "osx-x64",
+      "bytes": 210266288,
+      "sha256": "f68901d4555b2d277d7406e419559324e11c8b53538afdd5d228def1bff3d589",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/Workshop-0.1.0-alpha.2-macos-x64.dmg"
+    },
+    {
+      "name": "assets.osx-x64-alpha.json",
+      "runtime": "osx-x64",
+      "bytes": 215,
+      "sha256": "32025d7fc1e0abab56c2061e09bf36c6eca1c133f46b33842b48b87a0cfde512",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.osx-x64-alpha.json"
+    },
+    {
+      "name": "releases.osx-x64-alpha.json",
+      "runtime": "osx-x64",
+      "bytes": 333,
+      "sha256": "7f13b61d3397548a3a6d5a1ada06cb9d922d944893d67b885e8e2e2a7182d798",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.osx-x64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-osx-x64-alpha-full.nupkg",
+      "runtime": "osx-x64",
+      "bytes": 193751375,
+      "sha256": "078e6d11b954335f21d602ec280531b3aa62f4a99e7304b80c5e2b926a716370",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-osx-x64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-osx-x64-alpha-Portable.zip",
+      "runtime": "osx-x64",
+      "bytes": 195173704,
+      "sha256": "20127d2c0fcb4d6b893656569772fcc5c93fc84e616945f3ed45e1ecf03e0954",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-osx-x64-alpha-Portable.zip"
+    },
+    {
+      "name": "RELEASES-win-x64-alpha",
+      "runtime": "win-x64",
+      "bytes": 127,
+      "sha256": "a5d3252a16ccbc468208f9a2e5528c42a2752d6c59f9f9947f8dd6e2d57cc3c2",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-win-x64-alpha"
+    },
+    {
+      "name": "assets.win-x64-alpha.json",
+      "runtime": "win-x64",
+      "bytes": 316,
+      "sha256": "e251f73a86670e4789e59cbd554e57c8087bdfe63d8066542c4637d5679df208",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.win-x64-alpha.json"
+    },
+    {
+      "name": "releases.win-x64-alpha.json",
+      "runtime": "win-x64",
+      "bytes": 333,
+      "sha256": "479bc61453eab2e89a6f3062a2d9a50919bd51a7d7ad13229232a652dea133fe",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.win-x64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-win-x64-alpha-full.nupkg",
+      "runtime": "win-x64",
+      "bytes": 189729467,
+      "sha256": "313e5c8f6fe4ca6d5f75acb90695c834fb0660cb0cce843562f47cee1c5fc5bf",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-win-x64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-win-x64-alpha-Portable.zip",
+      "runtime": "win-x64",
+      "bytes": 189715903,
+      "sha256": "45feaec22268f8842044e807dcf7dacd5752f536a5aee036b1d66f8625b6818b",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-win-x64-alpha-Portable.zip"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-win-x64-alpha-Setup.exe",
+      "runtime": "win-x64",
+      "bytes": 197256891,
+      "sha256": "32dbe88014df889af79422bdb863100c232d2355e208c35f402b71972827fab0",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-win-x64-alpha-Setup.exe"
+    },
+    {
+      "name": "RELEASES-win-arm64-alpha",
+      "runtime": "win-arm64",
+      "bytes": 129,
+      "sha256": "a68685729d11224989368caab7e83594cb03bf3cfa49f6f9fe77d29358f8a60b",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-win-arm64-alpha"
+    },
+    {
+      "name": "assets.win-arm64-alpha.json",
+      "runtime": "win-arm64",
+      "bytes": 322,
+      "sha256": "407a4c59547236e4a405c59d753301cea425a672ab36db51c364faa964b67769",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.win-arm64-alpha.json"
+    },
+    {
+      "name": "releases.win-arm64-alpha.json",
+      "runtime": "win-arm64",
+      "bytes": 335,
+      "sha256": "85fb71b9e4b582175d4fdcaf394707afe1d7d24fc07f7b51159497352d50ff8c",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.win-arm64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-win-arm64-alpha-full.nupkg",
+      "runtime": "win-arm64",
+      "bytes": 180161180,
+      "sha256": "f220ebf506c00d1adff6e50676007514f438bbfcc77eaa11d56b9a6c566d50b6",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-win-arm64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-win-arm64-alpha-Portable.zip",
+      "runtime": "win-arm64",
+      "bytes": 180147615,
+      "sha256": "891706be338fa71c652d02929b681d9c94bfd98253e74aae45a61cf69b7784de",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-win-arm64-alpha-Portable.zip"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-win-arm64-alpha-Setup.exe",
+      "runtime": "win-arm64",
+      "bytes": 186082460,
+      "sha256": "38df81966fb57281d5ca6aa64ad0f904ae97d41f6a6046274072e453ba1647a8",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-win-arm64-alpha-Setup.exe"
+    },
+    {
+      "name": "RELEASES-linux-x64-alpha",
+      "runtime": "linux-x64",
+      "bytes": 129,
+      "sha256": "d816c33d55b109e460aed11bd50dc55454420a87c2b152ac8625dd494cbbc1f5",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-linux-x64-alpha"
+    },
+    {
+      "name": "Workshop-0.1.0-alpha.2-linux-x64.tar.gz",
+      "runtime": "linux-x64",
+      "bytes": 203229038,
+      "sha256": "e4758d6c243cfcceb82598e1b571972a274d1c5a15d67fa23894b1cde84dc9a7",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/Workshop-0.1.0-alpha.2-linux-x64.tar.gz"
+    },
+    {
+      "name": "assets.linux-x64-alpha.json",
+      "runtime": "linux-x64",
+      "bytes": 215,
+      "sha256": "3290bafc3a422ce3c2dc56fee8c67cbbfa86f4d20a9d6f4e19304895258c29b8",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.linux-x64-alpha.json"
+    },
+    {
+      "name": "releases.linux-x64-alpha.json",
+      "runtime": "linux-x64",
+      "bytes": 335,
+      "sha256": "8190c4a95db3e82bb89f258cd02bb30dd3d51d46038dfb25bff80616ed3ae427",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.linux-x64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-linux-x64-alpha-full.nupkg",
+      "runtime": "linux-x64",
+      "bytes": 202561082,
+      "sha256": "7b0694a78d1a95d6114a14c0a81c7636ff77d18c845b037dfc1852b408c1b18e",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-linux-x64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-linux-x64-alpha.AppImage",
+      "runtime": "linux-x64",
+      "bytes": 203692536,
+      "sha256": "72ee98648e0e25c5f78bb366c494cf8da004d70963612745dd30bafc54210922",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-linux-x64-alpha.AppImage"
+    },
+    {
+      "name": "RELEASES-linux-arm64-alpha",
+      "runtime": "linux-arm64",
+      "bytes": 131,
+      "sha256": "01192a8dffe972d2323e88f8cbf58b75c7b5a54f822936e79b33629111595f07",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/RELEASES-linux-arm64-alpha"
+    },
+    {
+      "name": "Workshop-0.1.0-alpha.2-linux-arm64.tar.gz",
+      "runtime": "linux-arm64",
+      "bytes": 199635119,
+      "sha256": "60692482ee7e8d9700154f9cafd6cd74cf7069e9893ec4ecadbaedacef4ce087",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/Workshop-0.1.0-alpha.2-linux-arm64.tar.gz"
+    },
+    {
+      "name": "assets.linux-arm64-alpha.json",
+      "runtime": "linux-arm64",
+      "bytes": 219,
+      "sha256": "cd08a1bc70b9898f4a9a6389867b2515d2061f4fe917f772fb7054e7f05144d0",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/assets.linux-arm64-alpha.json"
+    },
+    {
+      "name": "releases.linux-arm64-alpha.json",
+      "runtime": "linux-arm64",
+      "bytes": 337,
+      "sha256": "cd9023bf981aa92e45199e6c8e55038246ea5c2680a18b80c9de31f9cf4316f0",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/releases.linux-arm64-alpha.json"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-0.1.0-alpha.2-linux-arm64-alpha-full.nupkg",
+      "runtime": "linux-arm64",
+      "bytes": 198977741,
+      "sha256": "daf3a08749e010a9a3c6210d4194de06cc09f3a5d5d3a1599e74e1e0927c6a16",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-0.1.0-alpha.2-linux-arm64-alpha-full.nupkg"
+    },
+    {
+      "name": "studio.themercenary.workshop.suite-linux-arm64-alpha.AppImage",
+      "runtime": "linux-arm64",
+      "bytes": 200034824,
+      "sha256": "b8bc12392894c5e1fa3684165a0dd7128f0bcb7bbbaed2e0c65d2d77b845231a",
+      "url": "https://github.com/The-Mercenary/Workshop/releases/download/v0.1.0-alpha.2/studio.themercenary.workshop.suite-linux-arm64-alpha.AppImage"
     }
-  ],
-  "published_at": "2026-10-19T00:52:50Z"
+  ]
 }
