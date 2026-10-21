@@ -4,8 +4,8 @@ Official downloads and feeds are published by **The-Mercenary/Workshop**. App so
 
 ## Current behavior
 
-- Velopack **1.2.161** manages native packages and application replacement on macOS, Windows and Linux.
-- Each CPU/OS uses its own feed: `releases.<runtime>-alpha.json`, where runtime is `osx-arm64`, `osx-x64`, `win-x64`, `win-arm64`, `linux-x64` or `linux-arm64`.
+- Velopack **1.2.161** manages native packages and application replacement on macOS and Windows.
+- Each CPU/OS uses its own feed: `releases.<runtime>-alpha.json`, where runtime is `osx-arm64`, `osx-x64`, `win-x64` or `win-arm64`.
 - Alpha clients include prereleases. Stable builds use separate `-stable` channels and exclude prereleases. GitHub's `releases/latest` endpoint is not used for alpha discovery.
 - Automatic checks are enabled by default, start after the app is usable and are throttled to once per 24 hours across restarts. The user can disable them or choose Check now. Checks/downloads run off the UI thread; offline editing remains available.
 - Download and installation require the user's choice. Save all modified documents before Install and restart. Busy native editors, pending dialogs and unsaved documents prevent the restart. No silent automatic installation occurs.
@@ -27,7 +27,7 @@ SHA-256 checks corruption; it is not an independent publisher signature. This re
 
 Documents and `.workgroup/` metadata stay in the selected folder. Settings live in the per-OS user-data directory listed in README. Downloaded update files are confined to its `updates/packages` directory. App replacement does not migrate document formats or change Workgroup schema 1 in this release. A future schema change requires explicit compatibility/migration and recovery checks.
 
-Legacy `0.1.0-alpha.1` has no in-app updater: its users must manually install an updater-enabled version once. Linux installs should stay in a user-writable extracted folder with the `Workshop` launcher and `Workshop.AppImage` together; the launcher uses extract-and-run to avoid requiring FUSE. Updates may fail if the app location is read-only, disk space is insufficient or system policy blocks execution; local document files remain separate and a fresh official installer is the recovery route.
+Legacy `0.1.0-alpha.1` has no in-app updater: its users must manually install an updater-enabled version once. Updates may fail if the app location is read-only, disk space is insufficient or system policy blocks execution; local document files remain separate and a fresh official installer is the recovery route.
 
 ## References
 
